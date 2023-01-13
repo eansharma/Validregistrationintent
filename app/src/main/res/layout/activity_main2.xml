@@ -1,0 +1,149 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/lndy"
+        android:layout_width="80dp"
+
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="lndy"
+
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:gravity="top"
+        />
+    <TextView
+        android:id="@+id/hi_welcome_"
+        android:layout_width="265dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:text="Hi Welcome Back"
+
+        android:gravity="center_horizontal|top"
+        />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="60dp"
+            android:layout_height="21dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:textSize="14sp"
+            android:textColor="#695C5C"
+            android:text="email"
+
+            android:gravity="center_horizontal|top"
+            />
+        <EditText
+            android:layout_width="312dp"
+            android:layout_height="48dp"
+            android:hint="Enter Your Email"
+            android:id="@+id/et_email"
+            android:background="@drawable/edit_text_layout"
+            android:padding="10dp"
+
+            tools:ignore="InvalidId" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/error_email"
+            android:textColor="#F44336"
+            />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="78dp"
+            android:layout_height="21dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="password"
+
+
+            android:gravity="center_horizontal|top"
+            />
+
+        <EditText
+            android:layout_width="312dp"
+            android:layout_height="48dp"
+            android:id="@+id/et_password"
+            android:hint="Enter Your password"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_layout"
+            android:inputType="textPassword"
+
+            />
+        <TextView
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/error_password"
+            android:textColor="#F44336"
+            />
+
+
+        <Button
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:background="@drawable/button"
+            android:layout_marginTop="100dp"
+            android:text="Login"
+            android:onClick="login"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/don_t_have_"
+                android:layout_width="155dp"
+                android:layout_height="22dp"
+                android:textColor="#000000"
+                android:text="Don’t have an account ? "
+                android:gravity="top"
+                android:onClick="click"
+                />
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+
+                android:text="sign_up"
+                android:textSize="16sp"
+                android:textColor="#160062"
+                android:gravity="top"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
